@@ -14,6 +14,7 @@ for i in range(5):
 
     if numero % 2 == 0:
         pares = pares + 1
+        
     else:
         impares = impares + 1
 
