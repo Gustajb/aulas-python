@@ -13,10 +13,9 @@ contador = 0
 
 while True:
     numero = int(input("Digite um número: "))
-    if numero >= 0:
+    if numero == 0:
+        contador +=1
         break
-
-    contador +=1
 
 print(f"{contador} números negativos.")
 

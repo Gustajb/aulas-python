@@ -7,10 +7,10 @@ O programa deve exibir o total gasto e o valor
 excedente.
 """
 
+gasto_total = 0
+
 import os
 os.system("cls || clear")
-
-gasto_total = 0
 
 orcamento = int(input("Digite seu orçamento: "))
 
@@ -20,5 +20,6 @@ while True:
     
     if gasto_total > orcamento:
         print(f"O gasto é maior que o orçamento.")
+        break
     else: 
         print(f"Total: {orcamento - gasto_total}")

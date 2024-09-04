@@ -9,7 +9,8 @@ os.system("cls || clear")
 
 while True:
     numero = int(input("Digite um número: "))
-    if numero <50:
+    if numero >=50 and numero % 7 == 0:
+        print(f"{numero} é divisível por 7.")
         break
-    elif numero % 7 == 0:
-        print(f"{numero} é divisível por 7")
+    else:
+        print("Esse número não é divisível por 7.")

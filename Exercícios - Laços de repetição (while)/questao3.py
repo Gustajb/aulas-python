@@ -8,9 +8,19 @@ número de multiplicações realizadas.
 import os
 os.system("cls || clear")
 
+contador = 0
 numero = int(input("Digite um número: "))
-produto = 5 * numero
+soma = 0
 
-while produto <= 100:
-    print(f"Produto: {produto}")
-    break
+while True:
+    fator = int(input("Digite o fator: "))
+    produto = fator * numero
+    soma += produto
+    if produto < 100:
+        print(f"Produto: {produto}")
+        print(f"Soma dos produtos: {soma}")
+        contador += 1
+        if soma >= 100:
+            print(f"Produto ultrapassou 100. ")
+            break
+print(f"Número de multiplicações: {contador}")
