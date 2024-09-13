@@ -25,3 +25,5 @@ for i, numero in enumerate(lista_numeros):
 
 print(f"\nPares: {pares}")
 print(f"Ímpares: {impares}")
+
+
